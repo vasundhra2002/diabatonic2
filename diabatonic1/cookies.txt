@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+diabatonic.azurewebsites.net	TRUE	/	FALSE	1999999999	ARRAffinity	310119e3990d4e8a2f92f20e2550c769921a468ad9a6748dcdcdb672e284e57f
+.d3js.org	TRUE	/	FALSE	1999999999	__cfduid	dd9fcb66f8bc78a5de275df354dd32dca1529125868
+

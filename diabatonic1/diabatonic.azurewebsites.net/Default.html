@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from diabatonic.azurewebsites.net/Default.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Jun 2018 05:11:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Azure Machine Learning Web Service" /><meta name="author" /><title>
+	diabetes
+</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="CSS/bootstrap.css" rel="stylesheet" /><link href="CSS/jumbotron-narrow.css" rel="stylesheet" /><link href="CSS/master.css" rel="stylesheet" />
+
+    <!-- Java script / jQuery -->
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="../d3js.org/d3.v3.min.js"></script>
+
+
+    <!-- -->
+
+    <link href="CSS/jquery-ui-1.10.0.custom.min.css" rel="stylesheet" /><link href="CSS/sliderIE.css" rel="stylesheet" /><link href="CSS/sliderHTML.css" rel="stylesheet" />
+    <script src="Scripts/sliderIE.js"></script>
+    <script src="Scripts/sliderHTML.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <script src="Scripts/master.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            updateSliderIE();
+            updatesliderHTML();
+            updateResize();
+        });
+    </script>
+
+
+</head>
+<body onresize="updateResize()">
+    <div class="container azue-header">
+        <div class="jumbotron azue-header" style="background-image: url('Resources/azure-ml.png'); height: 126px; position: relative; padding-top: 10px;">
+            <a href="index.html">
+                <div class="wheel">
+                    <wheel></wheel>
+                </div>
+            </a>
+            <div style="max-height: 110px; overflow-y: hidden">
+                <h3 class="text-muted" style="padding-left: 110px; padding-right: 10px;">
+                    <span id="lblTitle">diabetes</span></h3>
+            </div>
+        </div>
+        <div class="container" id="fullpage">
+            <form method="post" action="https://diabatonic.azurewebsites.net/Default.aspx" id="form1" style="margin: 0 auto; position: relative" cssclass="form-inline">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc3NDgzMzMxMw9kFgICAw8PFgIeBFRleHQFCGRpYWJldGVzZGRk3li47MgdDwOvce9gZJuRxq0/zq0tYMoV+aOq+dKvLjg=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAArkkJqC5me6UDxGocaTqdqsUdPspXlKXZ6eOMHfW1hzq5ISk3UgxLrmYeQPJnqFHbsr3ToHe3V3bDH26UzByP/YHKE552mVDxmjGXo0tQB/0uno8x5hAbZ3ieVdmg94/iyFlQqYTSS8sX8IM7ikmkqyR6iLWEEvIHGya1JXKaouFBTirgBiNy9mO2tr+i9cV4c85pbWlDO2hADfoPXD/5tdCa2qBjI86xGTG1rlBHXX2T3SY8V1HhU11mzTXsE3Mb4=" />
+</div>
+                <div id="divMain">
+                    
+                    <fieldset style="margin-top: 30px" id="input1 Parameters"><legend>Input1 Parameters</legend><div id="divinput1 Parameters"><div class="row"><div class="col-lg-6"><p><div class="form-group"><span id="lblinput1Pregnancies" Class="fieldname">Pregnancies</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1Pregnancies" type="range" min="0" max="100" step="1" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1Pregnancies" type="number" value="0" id="input1Pregnancies" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1Pregnancies").oninput = function(event){document.getElementById("input1Pregnancies").value = event.target.value};document.getElementById("input1Pregnancies").onchange = function(event){document.getElementById("slider_input1Pregnancies").value = event.target.value};</script></div><div class="form-group"><span id="lblinput1Glucose" Class="fieldname">Glucose</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1Glucose" type="range" min="0" max="100" step="1" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1Glucose" type="number" value="0" id="input1Glucose" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1Glucose").oninput = function(event){document.getElementById("input1Glucose").value = event.target.value};document.getElementById("input1Glucose").onchange = function(event){document.getElementById("slider_input1Glucose").value = event.target.value};</script></div><div class="form-group"><span id="lblinput1BloodPressure" Class="fieldname">Bloodpressure</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1BloodPressure" type="range" min="0" max="100" step="1" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1BloodPressure" type="number" value="0" id="input1BloodPressure" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1BloodPressure").oninput = function(event){document.getElementById("input1BloodPressure").value = event.target.value};document.getElementById("input1BloodPressure").onchange = function(event){document.getElementById("slider_input1BloodPressure").value = event.target.value};</script></div><div class="form-group"><span id="lblinput1SkinThickness" Class="fieldname">Skinthickness</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1SkinThickness" type="range" min="0" max="100" step="1" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1SkinThickness" type="number" value="0" id="input1SkinThickness" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1SkinThickness").oninput = function(event){document.getElementById("input1SkinThickness").value = event.target.value};document.getElementById("input1SkinThickness").onchange = function(event){document.getElementById("slider_input1SkinThickness").value = event.target.value};</script></div><div class="form-group"><span id="lblinput1Insulin" Class="fieldname">Insulin</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1Insulin" type="range" min="0" max="100" step="1" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1Insulin" type="number" value="0" id="input1Insulin" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1Insulin").oninput = function(event){document.getElementById("input1Insulin").value = event.target.value};document.getElementById("input1Insulin").onchange = function(event){document.getElementById("slider_input1Insulin").value = event.target.value};</script></div></p></div><div class="col-lg-6"><p><div class="form-group"><span id="lblinput1BMI" Class="fieldname">BMI</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1BMI" type="range" min="0" max="100" step="0.01" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1BMI" type="text" value="0" id="input1BMI" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1BMI").oninput = function(event){document.getElementById("input1BMI").value = event.target.value};document.getElementById("input1BMI").onchange = function(event){document.getElementById("slider_input1BMI").value = event.target.value};</script></div><div class="form-group"><span id="lblinput1DiabetesPedigreeFunction" Class="fieldname">Diabetespedigreefunction</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1DiabetesPedigreeFunction" type="range" min="0" max="100" step="0.01" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1DiabetesPedigreeFunction" type="text" value="0" id="input1DiabetesPedigreeFunction" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1DiabetesPedigreeFunction").oninput = function(event){document.getElementById("input1DiabetesPedigreeFunction").value = event.target.value};document.getElementById("input1DiabetesPedigreeFunction").onchange = function(event){document.getElementById("slider_input1DiabetesPedigreeFunction").value = event.target.value};</script></div><div class="form-group"><span id="lblinput1Age" Class="fieldname">Age</span><div class="input-group"><span class="input-group-addon">0</span><input id="slider_input1Age" type="range" min="0" max="100" step="1" class="slider slider-displayHTML form-control"/><span class="input-group-addon">100</span><input name="input1Age" type="number" value="0" id="input1Age" Class="amount form-control form-control-number" /></div><script>document.getElementById("slider_input1Age").oninput = function(event){document.getElementById("input1Age").value = event.target.value};document.getElementById("input1Age").onchange = function(event){document.getElementById("slider_input1Age").value = event.target.value};</script></div></p></div></div></div></fieldset>
+                    
+                    <!-- <fieldset style="margin-top: 30px" id="global_param">
+                        <legend>Global Prameters</legend>
+
+                        <div id="divControlsGlobal">
+                            <div class="row">
+                                <div class="col-lg-6" id="col-global-1">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" id="col-global-2">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset style="margin-top: 30px" id="intput_param">
+                        <legend>Input Prameters</legend>
+                        <div id="divControls">
+                            <div class="row">
+                                <div class="col-lg-6" id="col-1">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" id="col-2">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                        -->
+
+                <div id="submitDiv">
+                    <input type="submit" name="btnSubmit" value="Submit" id="btnSubmit" class="btn btn-primary btnSubmit" />
+                </div>
+
+                <div id="divResult">
+                    
+                    <div id="topLoader"></div>
+                </div>
+
+                
+
+                <div id="footer">
+                    <div class="footerText">
+                        <p>Powered by <strong>Azure Machine Learning</strong></p>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <!-- /container -->
+
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="Scripts/js/ie10-viewport-bug-workaround.html"></script>
+        
+</body>
+
+<!-- Mirrored from diabatonic.azurewebsites.net/Default.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Jun 2018 05:11:19 GMT -->
+</html>
+
+<script type="text/javascript" src="Scripts/wheels.js"></script>
